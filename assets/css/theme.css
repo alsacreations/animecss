@@ -16,7 +16,6 @@
 /* stylelint-enable */
 
 :root {
-
   /* Breakpoints (en dur) */
   --md: 48rem; /* 768px */
   --lg: 64rem; /* 1024px */
@@ -50,8 +49,8 @@
   --spacing-80: 5rem;
 
   /* Familles de police */
-  --font-base:  system-ui, sans-serif;
-  --font-mono:  ui-monospace, monospace;
+  --font-base: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
 
   /* Graisses de police */
   --font-weight-light: 300;
@@ -109,6 +108,18 @@
   --color-gray-700: oklch(0.269 0 0);
   --color-gray-800: oklch(0.205 0 0);
   --color-gray-900: oklch(0.145 0 0);
+
+  /* Brand (Violet Tonic) */
+  --color-brand-50: oklch(0.97 0.02 290);
+  --color-brand-100: oklch(0.93 0.05 290);
+  --color-brand-200: oklch(0.88 0.08 290);
+  --color-brand-300: oklch(0.78 0.15 290);
+  --color-brand-400: oklch(0.65 0.22 290);
+  --color-brand-500: oklch(0.55 0.28 290);
+  --color-brand-600: oklch(0.45 0.26 290);
+  --color-brand-700: oklch(0.35 0.22 290);
+  --color-brand-800: oklch(0.25 0.15 290);
+  --color-brand-900: oklch(0.15 0.1 290);
   --color-error-100: oklch(0.97 0.1 27.52);
   --color-error-300: oklch(0.7054 0.19 27.52);
   --color-error-500: oklch(0.5054 0.19 27.52);
