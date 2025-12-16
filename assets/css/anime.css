@@ -45,10 +45,10 @@
 /* Scroll-driven Animations */
 @supports (animation-timeline: view()) {
   [data-animation] {
-    animation-timeline: view(block);
-    animation-timing-function: linear;
-    animation-fill-mode: both;
     animation-duration: auto;
+    animation-timing-function: linear;
+    animation-timeline: view(block);
+    animation-fill-mode: both;
   }
 
   [data-animation*="bounce"] {
@@ -183,10 +183,10 @@
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   [data-animation] {
-    animation: none !important;
     transform: none !important;
-    opacity: 1 !important;
     transition: none !important;
+    animation: none !important;
+    opacity: 100% !important;
   }
 }
 
@@ -245,6 +245,7 @@
   90% {
     translate: -1px;
   }
+
   20%,
   80% {
     translate: 2px;
@@ -255,6 +256,7 @@
   70% {
     translate: -2px;
   }
+
   40%,
   60% {
     translate: 2px;
@@ -266,6 +268,7 @@
   from {
     translate: -100%;
   }
+
   to {
     translate: 0;
   }
@@ -275,6 +278,7 @@
   from {
     translate: 100%;
   }
+
   to {
     translate: 0;
   }
@@ -284,6 +288,7 @@
   from {
     translate: 0 100%;
   }
+
   to {
     translate: 0;
   }
@@ -293,6 +298,7 @@
   from {
     translate: 0;
   }
+
   to {
     translate: 0 -100%;
   }
@@ -302,44 +308,48 @@
 @keyframes fade-left {
   from {
     translate: -100%;
-    opacity: 0;
+    opacity: 0%;
   }
+
   to {
     translate: 0;
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fade-right {
   from {
     translate: 100%;
-    opacity: 0;
+    opacity: 0%;
   }
+
   to {
     translate: 0;
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fade-up {
   from {
     translate: 0 100%;
-    opacity: 0;
+    opacity: 0%;
   }
+
   to {
     translate: 0;
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fade-up-exit {
   from {
     translate: 0;
-    opacity: 1;
+    opacity: 100%;
   }
+
   to {
     translate: 0 -100%;
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
@@ -348,6 +358,7 @@
   from {
     scale: 0.8;
   }
+
   to {
     scale: 1;
   }
@@ -356,10 +367,11 @@
 /* Reveal */
 @keyframes reveal {
   from {
-    opacity: 0.5;
+    opacity: 50%;
   }
+
   to {
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
@@ -367,21 +379,23 @@
 @keyframes flip-y {
   from {
     transform: perspective(400px) rotateY(90deg);
-    opacity: 0;
+    opacity: 0%;
   }
+
   to {
     transform: perspective(400px) rotateY(0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes flip-x {
   from {
     transform: perspective(400px) rotateX(90deg);
-    opacity: 0;
+    opacity: 0%;
   }
+
   to {
     transform: perspective(400px) rotateX(0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
