@@ -127,6 +127,22 @@
     --animation-direction-exit: normal;
   }
 
+  [data-animation*="slide-left-discrete"] {
+    --animation-name-entry: slide-left-discrete;
+    --animation-name-exit: slide-left-discrete;
+  }
+
+  [data-animation*="slide-right-discrete"] {
+    --animation-name-entry: slide-right-discrete;
+    --animation-name-exit: slide-right-discrete;
+  }
+
+  [data-animation*="slide-up-discrete"] {
+    --animation-name-entry: slide-up-discrete;
+    --animation-name-exit: slide-up-exit-discrete;
+    --animation-direction-exit: normal;
+  }
+
   /* Fade */
   [data-animation*="fade-left"] {
     --animation-name-entry: fade-left;
@@ -141,6 +157,22 @@
   [data-animation*="fade-up"] {
     --animation-name-entry: fade-up;
     --animation-name-exit: fade-up-exit;
+    --animation-direction-exit: normal;
+  }
+
+  [data-animation*="fade-left-discrete"] {
+    --animation-name-entry: fade-left-discrete;
+    --animation-name-exit: fade-left-discrete;
+  }
+
+  [data-animation*="fade-right-discrete"] {
+    --animation-name-entry: fade-right-discrete;
+    --animation-name-exit: fade-right-discrete;
+  }
+
+  [data-animation*="fade-up-discrete"] {
+    --animation-name-entry: fade-up-discrete;
+    --animation-name-exit: fade-up-exit-discrete;
     --animation-direction-exit: normal;
   }
 
@@ -304,6 +336,46 @@
   }
 }
 
+@keyframes slide-left-discrete {
+  from {
+    translate: -40px;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slide-right-discrete {
+  from {
+    translate: 40px;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slide-up-discrete {
+  from {
+    translate: 0 40px;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slide-up-discrete-exit {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: 0 -40px;
+  }
+}
+
 /* Fade */
 @keyframes fade-left {
   from {
@@ -349,6 +421,54 @@
 
   to {
     translate: 0 -100%;
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-left-discrete {
+  from {
+    translate: -40px;
+    opacity: 0%;
+  }
+
+  to {
+    translate: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-right-discrete {
+  from {
+    translate: 40px;
+    opacity: 0%;
+  }
+
+  to {
+    translate: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-up-discrete {
+  from {
+    translate: 0 40px;
+    opacity: 0%;
+  }
+
+  to {
+    translate: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-up-discrete-exit {
+  from {
+    translate: 0;
+    opacity: 100%;
+  }
+
+  to {
+    translate: 0 -40px;
     opacity: 0%;
   }
 }
