@@ -46,8 +46,12 @@
         <p>
           Ces animations se déclenchent lorsque l'élément entre dans la zone de
           vue (viewport) puis restent en place. L'attribut
-          <code>data-anime</code> permet de spécifier le type d'animation, par
-          exemple <code>data-anime="slide-up entry"</code> ou
+          <code>data-anime</code> permet de spécifier le type d'animation.
+        </p>
+        <p>
+          L'option <code>entry</code> (optionnelle) permet de spécifier que
+          l'animation se déclenche lorsqu'un élément entre dans la zone de vue,
+          par exemple <code>data-anime="slide-up entry"</code> ou
           <code>data-anime="fade-up entry"</code>.
         </p>
         <h3>Slide</h3>
@@ -56,19 +60,19 @@
           data-gap="l">
           <div
             class="box"
-            data-anime="slide-left entry">
-            slide-left entry
+            data-anime="slide-left">
+            slide-left
           </div>
           <div
             class="box"
-            data-anime="slide-up entry">
-            slide-up entry
+            data-anime="slide-up">
+            slide-up
           </div>
 
           <div
             class="box"
-            data-anime="slide-right entry">
-            slide-right entry
+            data-anime="slide-right">
+            slide-right
           </div>
         </div>
         <h3>Fade</h3>
@@ -77,19 +81,19 @@
           data-gap="l">
           <div
             class="box"
-            data-anime="fade-left entry">
-            fade-left entry
+            data-anime="fade-left">
+            fade-left
           </div>
           <div
             class="box"
-            data-anime="fade-up entry">
-            fade-up entry
+            data-anime="fade-up">
+            fade-up
           </div>
 
           <div
             class="box"
-            data-anime="fade-right entry">
-            fade-right entry
+            data-anime="fade-right">
+            fade-right
           </div>
         </div>
         <h3>Pulse</h3>
@@ -98,8 +102,8 @@
           data-gap="l">
           <div
             class="box"
-            data-anime="pulse entry">
-            pulse entry
+            data-anime="pulse">
+            pulse
           </div>
         </div>
         <h3>Reveal</h3>
@@ -108,8 +112,8 @@
           data-gap="l">
           <div
             class="box"
-            data-anime="reveal entry">
-            reveal entry
+            data-anime="reveal">
+            reveal
           </div>
         </div>
         <h3>Flip</h3>
@@ -118,13 +122,13 @@
           data-gap="l">
           <div
             class="box"
-            data-anime="flip-y entry">
-            flip-y entry
+            data-anime="flip-y">
+            flip-y
           </div>
           <div
             class="box"
-            data-anime="flip-x entry">
-            flip-x entry
+            data-anime="flip-x">
+            flip-x
           </div>
         </div>
       </section>
@@ -135,10 +139,8 @@
         data-gap="m">
         <h2>Animations en sortie</h2>
         <p>
-          Ces animations se déclenchent lorsque l'élément sort de la zone de vue
-          (viewport) puis restent en place. Le mot-clé "exit" permet de
-          spécifier que l'animation se déclenche lorsqu'un élément sort de la
-          zone de vue, par exemple
+          L'option <code>exit</code> permet de spécifier que l'animation se
+          déclenche lorsqu'un élément sort de la zone de vue, par exemple
           <code>data-anime="slide-up exit"</code> ou
           <code>data-anime="fade-up exit"</code>.
         </p>
@@ -227,8 +229,8 @@
         data-gap="m">
         <h2>Entrée et sortie à la fois</h2>
         <p>
-          Il est possible d'appliquer les deux mots-clés "entry" et "exit" à la
-          fois, par exemple
+          Il est possible d'appliquer les deux options <code>entry</code> et
+          <code>exit</code> à la fois, par exemple
           <code>data-anime="slide-up entry exit"</code> ou
           <code>data-anime="fade-up entry exit"</code>.
         </p>

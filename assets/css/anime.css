@@ -79,7 +79,7 @@
   }
 
   /* Ranges */
-  [data-anime*="entry"] {
+  [data-anime] {
     --animation-range-entry: cover 10% cover 30%;
     --animation-direction-entry: normal;
 
